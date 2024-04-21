@@ -2,11 +2,11 @@
 
 This Terraform repository contains configurations to deploy an AWS Lambda function triggered by a cron job (EventBridge rule) that runs every 5 minutes. The Lambda function (simple Hello-World function) is implemented using a Python script stored in the `app` folder.
 ## Folder Structure
-.
-├── App
-│   ├── Hello-World.py
-│   └── Hello-World.zip
-├── LICENSE
+1.
+2.├── App
+3.│   ├── Hello-World.py
+4.│   └── Hello-World.zip
+5.├── LICENSE
 ├── README.md
 ├── backend.tf
 ├── dev.tfvars
@@ -29,7 +29,7 @@ is used to lock the state file while running the deployment.
 
 - **`outputs.tf`**: Defines output values that can be useful after deploying the infrastructure, such as Lambda function ARN and EventBridge rule ARN.
 
-- **`dev.tfvars`**: Example Terraform variable file (`terraform.tfvars`) specific to the `dev` environment. Update this file with your AWS credentials and any environment-specific configuration values. More tfvars file can be added for other environments.
+- **`dev.tfvars`**: Example Terraform variable file (`terraform.tfvars`) specific to the `dev` environment. Update this file with any environment-specific configuration values. More tfvars file can be added for other environments.
 
 - **`app/Hello-World.py`**: Contains the Python code for the AWS Lambda function. Modify this file to implement the desired functionality for your Lambda function.
 
@@ -57,7 +57,7 @@ Before running Terraform commands, ensure you have:
    cd LambdawithCron
    ```
 
-2. Update the `dev.tfvars` file with your AWS credentials and any required variables.
+2. Update the `dev.tfvars` file with any required variables.
 
 3. Pass your credentials through CLI:
    ```bash
