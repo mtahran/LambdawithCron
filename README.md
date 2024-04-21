@@ -31,6 +31,8 @@ is used to lock the state file while running the deployment.
 
 - **`dev.tfvars`**: Example Terraform variable file (`terraform.tfvars`) specific to the `dev` environment. Update this file with any environment-specific configuration values. More tfvars file can be added for other environments.
 
+- **`locals.tf`**: It is used to define local values or expressions that can be reused within the Terraform configuration.
+
 - **`app/Hello-World.py`**: Contains the Python code for the AWS Lambda function. Modify this file to implement the desired functionality for your Lambda function.
 
 - **`.gitignore`**: It specifies intentionally untracked files that Git should ignore when tracking changes in a repository.
