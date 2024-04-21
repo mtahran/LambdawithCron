@@ -13,8 +13,8 @@ This Terraform repository contains configurations to deploy an AWS Lambda functi
 1. ├── locals.tf
 1. ├── main.tf
 1. ├── outputs.tf
-. ├── providers.tf
-. └── variables.tf
+1. ├── providers.tf
+1. └── variables.tf
 
 ## Files Included
 
