@@ -2,11 +2,11 @@
 
 This Terraform repository contains configurations to deploy an AWS Lambda function triggered by a cron job (EventBridge rule) that runs every 5 minutes. The Lambda function (simple Hello-World function) is implemented using a Python script stored in the `app` folder.
 ## Folder Structure
-1.
-2.├── App
-3.│   ├── Hello-World.py
-4.│   └── Hello-World.zip
-5.├── LICENSE
+
+├── App
+│   ├── Hello-World.py
+│   └── Hello-World.zip
+├── LICENSE
 ├── README.md
 ├── backend.tf
 ├── dev.tfvars
