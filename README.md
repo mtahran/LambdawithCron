@@ -33,7 +33,7 @@ is used to lock the state file while running the deployment.
 
 - **`locals.tf`**: It is used to define local values or expressions that can be reused within the Terraform configuration.
 
-- **`app/Hello-World.py`**: Contains the Python code for the AWS Lambda function. Modify this file to implement the desired functionality for your Lambda function.
+- **`app/Hello-World.py`**: Contains the Python code for the AWS Lambda function. For this use case, the python code is actually stored in S3 and uploaded to Lambda from there, but if you need to modify the function, use this file to implement the desired functionality for your Lambda function. Change the python code, run Terraform to use archive_file resource block to create .zip file, and then finally copy the file to S3.
 
 - **`.gitignore`**: It specifies intentionally untracked files that Git should ignore when tracking changes in a repository.
 It helps exclude files and directories from being committed to the version control system (Git), preventing unnecessary clutter and ensuring that sensitive or generated files (e.g., log files, build artifacts, temporary files) are not included in the repository.
